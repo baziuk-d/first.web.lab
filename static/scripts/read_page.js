@@ -21,7 +21,7 @@ async function fetchData() {
     try {
         const response = await fetch('/api/destinations');
         const destinations = await response.json();
-        data_array.length = 0; // Очищаємо масив перед заповненням новими даними
+        data_array.length = 0; 
         destinations.forEach(dest => data_array.push(dest));
         showElements(data_array);
     } catch (error) {
@@ -143,9 +143,9 @@ function create_modal() {
     let create_modal_div = document.querySelector("#create-modal");
     let modal_background = document.querySelector("#background-modal");
     let body = document.querySelector("#body");
-    create_modal_div.style.display = "flex";  // Показуємо модальне вікно
-    modal_background.style.display = "block";  // Показуємо фон
-    body.style.overflow = "hidden";             // Блокуємо прокрутку
+    create_modal_div.style.display = "flex";
+    modal_background.style.display = "block";
+    body.style.overflow = "hidden";   
 }
 
 async function create_element() {
@@ -183,10 +183,9 @@ async function create_element() {
             data_array.push(createdDestination);
             clearScreen();
             showElements(data_array);
-            close_modal(); // Закриває модальне вікно після створення
+            close_modal(); 
 
-            // Оновлюємо сторінку
-            location.reload(); // Додаємо автоматичне оновлення сторінки
+            location.reload();
         } else {
             console.error('Failed to create a destination');
         }
@@ -194,13 +193,11 @@ async function create_element() {
         console.error('Error creating destination:', error);
     }
 
-    // Очищення полів після створення елемента
-    clearModalFields(); // Якщо потрібно очистити поля після створення
+    clearModalFields();
 }
 
 
 function clearModalFields() {
-    // Очищення всіх полів у модальному вікні
     document.querySelector("#title-modal").value = '';
     document.querySelector("#description-modal").value = '';
     document.querySelector("#price-modal").value = '';
@@ -275,10 +272,9 @@ async function edit_item(id) {
         if (response.ok) {
             clearScreen();
             showElements(data_array);
-            close_modal(); // Закриває модальне вікно після редагування
+            close_modal(); 
             
-            // Оновлюємо сторінку
-            location.reload(); // Додаємо автоматичне оновлення сторінки
+            location.reload();
         } else {
             console.error('Failed to update destination');
         }
@@ -291,23 +287,21 @@ async function edit_item(id) {
 function close_modal() {
     console.log("Закриваємо модальне вікно");
 
-    // Закриваємо всі модальні вікна
     document.querySelectorAll(".modal").forEach(modal => {
-        console.log("Закриваємо:", modal);  // Лог для перевірки
-        modal.style.display = "none";         // Встановлюємо display в none
-        modal.classList.remove("show");       // Знімаємо клас, якщо він існує
+        console.log("Закриваємо:", modal); 
+        modal.style.display = "none";   
+        modal.classList.remove("show");   
     });
 
     const backgroundModal = document.querySelector("#background-modal");
     if (backgroundModal) {
         console.log("Закриваємо фон модального вікна");
-        backgroundModal.style.display = "none";  // Закриваємо фон
-        backgroundModal.classList.remove("show"); // Знімаємо клас, якщо він існує
+        backgroundModal.style.display = "none"; 
+        backgroundModal.classList.remove("show");
     }
     
-    document.body.style.overflow = "auto"; // Відновлюємо прокрутку
+    document.body.style.overflow = "auto"; 
 
-    // Очищення всіх полів у модальному вікні
     clearModalFields();
 
     console.log("Модальне вікно закрите і очищене");
