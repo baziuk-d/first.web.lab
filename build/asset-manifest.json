@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.adb76c01.css",
+    "main.js": "/static/js/main.22204630.js",
+    "static/media/FanjingshanChina.svg": "/static/media/FanjingshanChina.ce4fd86344e93f1043e08d99a59ca5a5.svg",
+    "static/media/RajaAmpatIndonesia.svg": "/static/media/RajaAmpatIndonesia.1b9f8e73d7eebdd08a854d0e852e5768.svg",
+    "static/media/VeveySwitzerland.svg": "/static/media/VeveySwitzerland.f6404189f8a192cfcc08be7e29175b9a.svg",
+    "static/media/SkadarMontenegro.svg": "/static/media/SkadarMontenegro.f8ffeeb646b711d5b916014b19397852.svg",
+    "static/media/Inter_18pt-Regular.ttf": "/static/media/Inter_18pt-Regular.86c330c66f7333ff6202.ttf",
+    "static/media/Thousand-02 1@2x.svg": "/static/media/Thousand-02 1@2x.46012fb901f9144768138d0344aaf5c8.svg",
+    "static/media/PlayfairDisplay-Regular.ttf": "/static/media/PlayfairDisplay-Regular.693728812dc43ab34710.ttf",
+    "static/media/Muli-Regular.ttf": "/static/media/Muli-Regular.426119c6180ffbf84af2.ttf",
+    "static/media/YouTube.svg": "/static/media/YouTube.a2c34d8997673b8e8af883254cb15ab4.svg",
+    "static/media/Twitter.svg": "/static/media/Twitter.78ab6ad721fff445d27f300fab1d2370.svg",
+    "static/media/Instagram.svg": "/static/media/Instagram.d90e63039bbd02f23721189ec9c6a6f5.svg",
+    "static/media/LinkedIn.svg": "/static/media/LinkedIn.65c75c66d67c306cd21a414883ae8450.svg",
+    "index.html": "/index.html",
+    "static/media/Bird.svg": "/static/media/Bird.e0d4f0af92c4b55e2b0f.svg",
+    "static/media/Facebook.svg": "/static/media/Facebook.857283215757be1dfb70b5b6e54800ff.svg",
+    "static/media/logo.svg": "/static/media/logo.f70ae7a144344f73d9ed8dd4d8fc3d70.svg",
+    "static/media/orange_v.svg": "/static/media/orange_v.6af9a3b8c9a425162da3d6719795697d.svg",
+    "main.adb76c01.css.map": "/static/css/main.adb76c01.css.map",
+    "main.22204630.js.map": "/static/js/main.22204630.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.adb76c01.css",
+    "static/js/main.22204630.js"
+  ]
+}

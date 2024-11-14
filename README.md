@@ -1,2 +1,0 @@
-# Web Lab
-## Web technologies
