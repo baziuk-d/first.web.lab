@@ -1,0 +1,119 @@
+.item-page {
+    padding: 20px 18%;
+    animation: fadeIn 0.8s ease;
+
+    .info {
+        display: flex;
+        align-items: flex-start;
+
+        .avatar {
+            border-radius: 8px;
+            width: 460px;
+            height: auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легка тінь */
+            transition: transform 0.3s ease; /* Плавний ефект */
+        }
+
+        .avatar:hover {
+            transform: scale(1.03); /* Трохи збільшується при наведенні */
+        }
+
+        .details {
+            margin: 0 15%;
+            row-gap: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .filters {
+                display: flex;
+                align-items: center;
+                column-gap: 20px;
+
+                .rate-item-page, .continent-item-page {
+                    border: 2px solid #FB8F1D;
+                    border-radius: 20px;
+                    font-size: 18px;
+                    padding: 5px 15px;
+                    font-family: "Muli", serif;
+                    font-weight: 600;
+                    transition: background-color 0.3s ease, color 0.3s ease; /* Плавний перехід */
+                }
+
+                .rate-item-page:hover, .continent-item-page:hover {
+                    background-color: #FB8F1D; /* Зміна кольору фону */
+                    color: white; /* Зміна кольору тексту */
+                }
+            }
+
+            .title-item-page {
+                font-size: 50px;
+                font-family: "Playfair", sans-serif;
+                font-weight: 800;
+                text-align: center;
+                margin: 20px 0;
+                color: #333;
+            }
+
+            .description-item-page {
+                font-size: 22px;
+                font-family: "Inter", sans-serif;
+                text-align: center;
+                color: #555;
+                line-height: 1.5;
+            }
+
+            .price-item-page {
+                font-size: 30px;
+                font-family: "Muli", serif;
+                font-weight: bold; /* Жирний шрифт */
+                color: #2E7D32;
+                margin: 10px 0; /* Менший відступ */
+            }
+
+            .last-updated-item-page {
+                font-size: 16px;
+                font-family: "Muli", serif;
+                color: #777;
+            }
+        }
+    }
+
+    .navigation-item-page {
+        border: 0.5px solid cornflowerblue;
+        background-color: cornflowerblue;
+        border-radius: 10px;
+        margin-top: 50px; 
+        display: flex;
+        justify-content: center;
+        padding: 10px 20px;
+        width: fit-content;
+        margin-left: auto; 
+        margin-right: auto;
+
+        .go-back-button {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 20px;
+            transition: transform 0.3s ease; /* Анімація для плавності */
+        }
+
+        &:hover {
+            transform: scale(1.05); /* Збільшення при наведенні */
+            box-shadow: 0 5px 15px rgba(33, 82, 150, 0.975); /* Тінь */
+        }
+    }
+}
+
+/* Анімація для появи сторінки */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
