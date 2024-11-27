@@ -1,0 +1,167 @@
+.item-page {
+    padding: 20px 18%;
+    animation: fadeIn 0.8s ease;
+
+    .info {
+        display: flex;
+        align-items: flex-start;
+
+        .avatar {
+            border-radius: 8px;
+            width: 460px;
+            height: auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легка тінь */
+            transition: transform 0.3s ease; /* Плавний ефект */
+        }
+
+        .avatar:hover {
+            transform: scale(1.03); /* Трохи збільшується при наведенні */
+        }
+
+        .details {
+            margin: 0 15%;
+            row-gap: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .filters {
+                display: flex;
+                align-items: center;
+                column-gap: 20px;
+
+                .rate-item-page, .continent-item-page {
+                    border: 2px solid #FB8F1D;
+                    border-radius: 20px;
+                    font-size: 18px;
+                    padding: 5px 15px;
+                    font-family: "Muli", serif;
+                    font-weight: 600;
+                    transition: background-color 0.3s ease, color 0.3s ease; /* Плавний перехід */
+                }
+
+                .rate-item-page:hover, .continent-item-page:hover {
+                    background-color: #FB8F1D; /* Зміна кольору фону */
+                    color: white; /* Зміна кольору тексту */
+                }
+            }
+
+            .title-item-page {
+                font-size: 50px;
+                font-family: "Playfair", sans-serif;
+                font-weight: 800;
+                text-align: center;
+                margin: 20px 0;
+                color: #333;
+            }
+
+            .description-item-page {
+                font-size: 22px;
+                font-family: "Inter", sans-serif;
+                text-align: center;
+                color: #555;
+                line-height: 1.5;
+            }
+
+            .price-item-page {
+                font-size: 30px;
+                font-family: "Muli", serif;
+                font-weight: bold; /* Жирний шрифт */
+                color: black;
+                margin: 10px 0; /* Менший відступ */
+            }
+
+            .last-updated-item-page {
+                font-size: 16px;
+                font-family: "Muli", serif;
+                color: #777;
+            }
+        }
+
+        .select-item-page {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .input-number-item-page {
+                width: 120px;
+                padding: 8px;
+                font-size: 16px;
+                border: 2px solid #ccc;
+                border-radius: 6px;
+                text-align: center;
+                transition: border-color 0.3s, box-shadow 0.3s;
+
+                &:focus {
+                    border-color: #007bff;
+                    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+                }
+            }
+        }
+
+        .navigation-item-page {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            .create_button-cart {
+                background-color: rgb(116, 151, 55);
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-size: 18px;
+                font-weight: bold;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+
+                &:hover {
+                    background-color: rgb(116, 151, 55);
+                    transform: scale(1.05);
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                }
+
+                &:active {
+                    background-color: rgb(119, 167, 37);
+                }
+            }
+
+            .go-back-button {
+                background-color: transparent;
+                color: #007bff;
+                border: 2px solid #007bff;
+                padding: 10px 20px;
+                font-size: 18px;
+                font-weight: bold;
+                border-radius: 6px;
+                text-decoration: none;
+                cursor: pointer;
+                transition: background-color 0.3s, color 0.3s, transform 0.2s;
+
+                &:hover {
+                    background-color: #007bff;
+                    color: white;
+                    transform: scale(1.05);
+                }
+
+                &:active {
+                    background-color: #0056b3;
+                }
+            }
+        }
+    }
+}
+
+/* Анімація для появи сторінки */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
