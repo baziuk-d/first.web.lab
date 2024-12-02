@@ -1,0 +1,120 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 100%; 
+    margin: 0 auto; 
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.item {
+    flex: 0 1 calc(25% - 20px);
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.item:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.item-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item h1 {
+    font-family: "Muli", serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+    color: #333333;
+    text-align: center;
+}
+
+.item p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+}
+
+.item img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.item-updated-at {
+    font-size: 14px;
+    color: #A0A0A0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.item-buttons {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.item-buttons button {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.item-buttons .edit {
+    background-color: #007BFF;
+    color: #FFFFFF;
+}
+
+.item-buttons .edit:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.item-buttons .delete {
+    background-color: #DC3545;
+    color: #FFFFFF;
+}
+
+.item-buttons .delete:hover {
+    background-color: #a71d2a;
+    transform: scale(1.1);
+}
+
+.id {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
